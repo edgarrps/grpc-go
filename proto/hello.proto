@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option go_package = "./pb";
+option go_package = "./pb"; // pb aka protocol buffer
 
 service Hello {
     rpc SayHello (HelloRequest) returns (HelloResponse) {}
 }
 
 message HelloRequest {
-    string name = 1;
+    string name = 1; //tag origin entry
 }
 
 message HelloResponse {
